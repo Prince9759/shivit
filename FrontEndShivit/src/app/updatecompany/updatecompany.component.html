@@ -1,0 +1,30 @@
+<div>
+    <h2>Add Company</h2>
+
+
+   <form [formGroup]=" CompanyRef" (ngSubmit)="updateCompany()">
+
+    <label>Enter Company Id</label>
+    <input type="text" value={{id}} readonly/><br/> 
+
+    <label>Enter Company Name</label>
+    <input type="text" formControlName="cname" name ="cname"value={{name}}/><br/>
+
+    <label>Enter Company Address</label>
+    <input type="text" formControlName="caddress" value={{address}}/><br/>
+
+    <label>Enter Company Email</label>
+    <input type="text" formControlName="cemail" value={{email}}/><br/>
+
+
+
+    
+
+
+
+    <input type="submit" value="updateCompany"/>
+
+    <input type="reset" value="reset"/>
+   </form> 
+</div>
+

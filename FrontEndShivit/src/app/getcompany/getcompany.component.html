@@ -1,0 +1,32 @@
+<button (click)="AddCompany()">Add Company</button><br/><br/>
+<table >
+    <thead>
+      
+        <th scope="col" >id</th>
+        <th scope="col" >ComapanyName</th>
+        <th scope="col" >Company Address</th>
+        <th scope="col" >Company Email</th>
+        <th scope="col" >Company Action</th>
+        
+ 
+      
+    </thead>
+    <tbody>
+      <tr *ngFor="let i of ans" >
+            
+       
+          <td scope="col" >{{i.id}} </td>
+          <td scope="col" >{{i.cname}}</td>
+          <td scope="col" >{{i.caddress}}</td>
+          <td scope="col" >{{i.cemail}}</td>
+          <button (click)="updateCompany(i.id)">update</button>
+        
+          
+      </tr>
+      
+    </tbody>
+
+   
+  </table>
+
+  
